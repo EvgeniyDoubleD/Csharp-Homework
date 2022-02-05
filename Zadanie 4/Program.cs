@@ -1,4 +1,5 @@
-﻿Console.Write ("Введите число больше 1: ");
+﻿// Показать четные числа от 1 до N
+Console.Write ("Введите число больше 1: ");
 
 string numbers = Console.ReadLine();
 
