@@ -48,9 +48,9 @@ int j = numberint;
 int f = numberint;
 
 
-while (j > i)
+while (j%100 > i)
 {
-    {   if (j%100 != 1)
+    {   
         j = j / 10;
         c++;
         Console.WriteLine($"While j = {j}");
