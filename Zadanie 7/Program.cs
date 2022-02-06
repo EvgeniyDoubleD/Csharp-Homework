@@ -39,7 +39,7 @@ string numberstring = Console.ReadLine();
 
 int numberint = int.Parse(numberstring);
 
-int i = 1;
+int i = 99;
 
 int c = 0;
 
@@ -48,7 +48,7 @@ int j = numberint;
 int f = numberint;
 
 
-while (j%100 > i)
+while (j > i)
 {
     {   
         j = j / 10;
@@ -63,7 +63,7 @@ while (j%100 > i)
 
 int b = 0;
 
-while (b < c-2)
+while (b < c-1)
 {
     {
      f = f / 10;
@@ -82,6 +82,9 @@ while (b < c-2)
 }
 
 int x = f % 10;
-
+    
+    if (numberint > i)
     Console.WriteLine($"Третья цифра числа - {x}");
+    else
+    Console.WriteLine($"В заданном числе меньше трех цифр");
     
