@@ -33,58 +33,45 @@
 
 //Console.WriteLine(pars)
 
-Console.Write("Введите число: ");
-
-string numberstring = Console.ReadLine();
-
-int numberint = int.Parse(numberstring);
-
-int i = 99;
-
-int c = 0;
-
-int j = numberint;
-
-int f = numberint;
-
-
-while (j > i)
+int InPut(string msg)
 {
-    {   
-        j = j / 10;
-        c++;
-        Console.WriteLine($"While j = {j}");
-        Console.WriteLine($"Iterations =  {c}");
-    
-
-    }
-
+    Console.Write(msg);
+    string num = Console.ReadLine();
+    return int.Parse(num);
 }
 
-int b = 0;
-
-while (b < c-1)
-{
+int GetCounts(int number)
+{   
+    int d = 99;
+    int c = 0;
+    while (number > d)
     {
-     f = f / 10;
-
-     Console.WriteLine($"Number = {f}");
-
-     b++;
-
-     Console.WriteLine($"Delenie raz ={b}");
-
-
-
-     }
-
+        number = number/10;
+        c++;
+    }
+    return c-1;
 
 }
 
-int x = f % 10;
-    
-    if (numberint > i)
-    Console.WriteLine($"Третья цифра числа - {x}");
-    else
-    Console.WriteLine($"В заданном числе меньше трех цифр");
+int GetThirdNumber(int number, int count)
+{
+    int track = 0;
+     while (track < count)
+        {
+            number = number / 10;
+            track++;
+        }
+        return number%10;
+}
+
+
+int number = InPut("Введите натуральное целое число: ");
+int counts = GetCounts(number);
+int third = GetThirdNumber(number,counts);
+
+if (number<=99)
+    Console.WriteLine("В числе меньше трех цифр");
+else
+    Console.WriteLine($"Третья цифра числа: {third}");
+
     
