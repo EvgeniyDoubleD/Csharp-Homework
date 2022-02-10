@@ -32,7 +32,7 @@ void PrintArray(int [] array) // Выводим массив N^ =
         Console.WriteLine($"{i+1}^3 = {array[i]}");
 }
 
-int rNumber = GetRandomNumber("RandomN Number Gen");
+int rNumber = GetRandomNumber(" ");
 
 int [] array = InitArray(rNumber);
 
