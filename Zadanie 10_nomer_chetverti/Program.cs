@@ -1,2 +1,2 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Задача 20: Задать номер четверти, показать диапазоны для возможных координат
+// 1. Создать массив с диапозонами возможных координат прим. [] m ={ x - 1 ->8 | y = 1 -> 8, 
