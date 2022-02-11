@@ -6,12 +6,14 @@
 double GetCoordinate(string msg) // метод ввода точки координат с проверкой на текст введенный.
 {
     double result = 0;
-    while (result == 0)
+    string message = null;
+    while (result == 0 || message is null)
     {
         Console.Write(msg);
-        string message = Console.ReadLine();
+        string messageIn = Console.ReadLine();
         double.TryParse(message, out double result_check);
         result = result_check;
+        message = messageIn;
     }
     return result;
 }   
@@ -24,3 +26,13 @@ double y_two = GetCoordinate("Параметр точки №2. Введите �
 double z_two = GetCoordinate("Параметр точки №2. Введите координаты по оси Z: ");
 
 Console.WriteLine($"Координаты точки №1: {x_one} {y_one} {z_one}\nКоординаты точки №2: {x_two} {y_two} {z_two}");
+
+double distance = Math.Sqrt((Math.Pow((x_two - x_one),2) + Math.Pow((y_two - y_one),2) + Math.Pow((z_two - z_one),2))); // формула расчета расстояния 3д работает 2д под вопросом.
+
+Console.WriteLine($"Расстояние между указаными точками : {distance}");
+
+double checkout = Math.Sqrt((Math.Pow((x_two - (x_one)),2)));
+
+double check = Math.Sqrt((Math.Pow((y_two - y_one),2)));
+
+Console.WriteLine($"checkout = {checkout}; check = {check}");
