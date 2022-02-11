@@ -8,7 +8,7 @@ double GetCoordinate(string msg) // метод ввода точки коорд�
     double result = 0;
     while (result == 0)
     {
-        Console.WriteLine(msg);
+        Console.Write(msg);
         string message = Console.ReadLine();
         double.TryParse(message, out double result_check);
         result = result_check;
@@ -16,3 +16,11 @@ double GetCoordinate(string msg) // метод ввода точки коорд�
     return result;
 }   
 
+double x_one = GetCoordinate("Параметр точки №1. Введите координаты по оси Х: ");
+double y_one = GetCoordinate("Параметр точки №1. Введите координаты по оси Y: ");
+double z_one = GetCoordinate("Параметр точки №1. Введите координаты по оси Z: ");
+double x_two = GetCoordinate("Параметр точки №2. Введите координаты по оси Х: ");
+double y_two = GetCoordinate("Параметр точки №2. Введите координаты по оси Y: ");
+double z_two = GetCoordinate("Параметр точки №2. Введите координаты по оси Z: ");
+
+Console.WriteLine($"Координаты точки №1: {x_one} {y_one} {z_one}\nКоординаты точки №2: {x_two} {y_two} {z_two}");
