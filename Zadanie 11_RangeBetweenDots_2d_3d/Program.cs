@@ -17,10 +17,10 @@ double GetCoordinate(string msg) // метод ввода точки коорд�
             coordinate = result_check;
             message = messageIn;
            }
-        
     }
     return coordinate;
 }   
+
 void DoNiceFormatOutput() // метод "красивого" разделения вывода данных в консоли :>
 {
     Console.WriteLine("======================================");
@@ -36,10 +36,13 @@ double y_two = GetCoordinate("Введите координаты по оси Y:
 double z_two = GetCoordinate("Введите координаты по оси Z: ");
 
 DoNiceFormatOutput();
+
 Console.WriteLine($"Координаты точки А: ({x_one},{y_one},{z_one})\nКоординаты точки B: ({x_two},{y_two},{z_two})");
+
 DoNiceFormatOutput();
 
 double distance = Math.Sqrt((Math.Pow((x_two - x_one),2) + Math.Pow((y_two - y_one),2) + Math.Pow((z_two - z_one),2))); // формула расчета расстояния 2д/3д смотря как заданы координаты.
 
 Console.WriteLine($"Расстояние между указанными точками составляет : {distance}");
+
 DoNiceFormatOutput();
