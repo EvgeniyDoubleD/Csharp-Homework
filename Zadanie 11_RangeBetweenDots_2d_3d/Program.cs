@@ -100,8 +100,6 @@ if (choise == 2)
         Console.WriteLine($"Расстояние между указанными точками составляет : {distance}");
 
         DoNiceFormatOutput();
-
-
     }
 
 
