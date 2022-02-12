@@ -37,7 +37,7 @@ double z_two = GetCoordinate("Введите координаты по оси Z:
 
 DoNiceFormatOutput();
 
-Console.WriteLine($"Координаты точки А: ({x_one},{y_one},{z_one})\nКоординаты точки B: ({x_two},{y_two},{z_two})");
+Console.WriteLine($"Координаты точки А: ({x_one} , {y_one} , {z_one})\nКоординаты точки B: ({x_two} , {y_two} , {z_two})");
 
 DoNiceFormatOutput();
 
