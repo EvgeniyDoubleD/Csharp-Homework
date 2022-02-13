@@ -27,7 +27,7 @@ int c = 1;
 
 while (i != b)
  {
-     c = c*d;
+     c *= d;
      i++;
  }
 
