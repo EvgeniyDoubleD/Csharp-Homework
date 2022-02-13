@@ -20,15 +20,15 @@ int GetAnaturalNumber(string msg) // метод ввода точки коорд
     return number;
 }
 
-int d = GetAnaturalNumber("Введите натуральное число А: ");
-int b = GetAnaturalNumber("Введите натуральное число B: ");
+int number = GetAnaturalNumber("Введите натуральное число А: ");
+int degree = GetAnaturalNumber("Введите натуральное число B: ");
 int i = 0;
-int c = 1;
+int number_in_degree = 1;
 
-while (i != b)
+while (i != degree)
  {
-     c *= d;
+     number_in_degree *= number;
      i++;
  }
 
-Console.WriteLine($"Число A в степени B = {c}");
+Console.WriteLine($"Число A в степени B  = {number_in_degree}");
