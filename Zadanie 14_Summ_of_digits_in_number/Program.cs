@@ -22,10 +22,9 @@ int GetANumber(string msg) // метод ввода точки координа�
 
 int number = GetANumber("Введите целое число сумму цифр которого необходимо посчитать: ");
 
-int i = 10;
 int summ = 0;
 
-while (i < number)
+while (number >= 10)
     {
         summ += number%10;
         number /= 10;
