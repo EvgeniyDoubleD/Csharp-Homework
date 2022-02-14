@@ -3,8 +3,9 @@
 // возводим в кубы 
 // выводим на печать?
 
-int numberR = new Random().Next(1,35);
+int numberR = new Random().Next(1,55);
 Console.WriteLine($"Сгенерировано число: {numberR}");
+
 int [] array = new int[numberR];
 int [] FillArray(int [] array) // Заполняем массив кубами N
 {
