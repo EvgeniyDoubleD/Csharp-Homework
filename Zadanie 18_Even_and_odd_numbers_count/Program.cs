@@ -25,7 +25,7 @@ void CountEvenAndOddArray(int [] array) // считаем четные - неч�
                 even++;
         }
     odd = array.Length - even;
-    Console.WriteLine($"Четных элементов в массиве: {even} \nНечетных элементов в массив: {odd}");
+    Console.WriteLine($"Четных элементов в массиве: {even} \nНечетных элементов в массиве: {odd}");
 }
 
 void FineBreakOnConsole(string msg) // красиво разделяем вывод в терминал
@@ -36,6 +36,9 @@ void FineBreakOnConsole(string msg) // красиво разделяем выв�
 int [] array = new int [21];
 
 FineBreakOnConsole("Сгенерирован массив: ");
+
 FillAndPrintArray(array);
+
 FineBreakOnConsole("");
+
 CountEvenAndOddArray(array);
