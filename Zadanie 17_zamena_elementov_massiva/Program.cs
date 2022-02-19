@@ -30,8 +30,13 @@ void ChangeArrayElements(int [] array) // меняем элементы масс
 }
 
 int [] array = new int [9];
+
 FineBreakOnConsole("Сгенерирован массив:");
+
 FillAndPrintArray(array);
+
 FineBreakOnConsole("");
+
 FineBreakOnConsole("Сгенерирована замена элементов массива:");
+
 ChangeArrayElements(array);
