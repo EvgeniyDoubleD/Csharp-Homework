@@ -13,8 +13,8 @@ void FillAndPrintArray(int [] array) // заполняем массив ранд
     Random rNum = new Random();
     for ( int i = 0; i != array.Length; i++)
         {
-        array [i] = rNum.Next(-14,14);
-        Console.Write($"[{array[i]}]\t");
+            array [i] = rNum.Next(-14,14);
+            Console.Write($"[{array[i]}]\t");
         }
 }
 
