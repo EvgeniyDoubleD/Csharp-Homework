@@ -32,6 +32,9 @@ void FineBreakOnConsole(string msg) // красиво разделяем выв�
 int [] array = new int [9];
 
 FineBreakOnConsole("Сгенерирован массив:");
+
 FillAndPrintArray(array);
+
 FineBreakOnConsole("");
+
 SummOfOddIndexElems(array);
