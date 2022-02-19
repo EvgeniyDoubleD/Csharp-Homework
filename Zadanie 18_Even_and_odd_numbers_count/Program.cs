@@ -11,7 +11,7 @@ void FillAndPrintArray(int [] array) // заполняем массив ранд
     for ( int i = 0; i != array.Length; i++)
         {
         array [i] = rNum.Next(100,1000);
-        Console.Write($"[{array[i]}]\t");
+        Console.Write($"[{array[i]}]");
         }
 }
 
