@@ -13,7 +13,7 @@ void FillAndPrintArray(double [] array) // заполняем массив ра�
         }
 }
 
-void SummOfOddIndexElems(double [] array) // считаем сумму эл-тов на нечетной позиции
+void DifferenceOfMaxMinElements(double [] array) // находим разницу макс-мин эл-тов массива, выводим в консоль
 {
     double maxElem = array[0];
     double minElem = array[0];
@@ -38,4 +38,4 @@ double [] array = new double [5];
 FineBreakOnConsole("Сгенерирован массив:");
 FillAndPrintArray(array);
 FineBreakOnConsole("");
-SummOfOddIndexElems(array);
+DifferenceOfMaxMinElements(array);
