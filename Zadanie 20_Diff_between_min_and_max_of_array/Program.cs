@@ -10,7 +10,7 @@ int GetAMassiveSize(string msg) // метод ввода числа с пров�
     {
         Console.Write(msg);
         string messageIn = Console.ReadLine();
-        if (result = int.TryParse(messageIn, out int result_check) && result_check > 0);
+        if (result = int.TryParse(messageIn, out int result_check) && result_check > 1);
            {
             number = result_check;
            }
@@ -52,6 +52,9 @@ int massiveSize = GetAMassiveSize("Укажите желаемый размер 
 double [] array = new double [massiveSize];
 
 FineBreakOnConsole($"Сгенерирован массив из {massiveSize} элементов: ");
+
 FillAndPrintArray(array);
+
 FineBreakOnConsole("");
+
 DifferenceOfMaxMinElements(array);
