@@ -12,11 +12,11 @@ double GetANumber(string msg) // метод ввода числа с прове�
     {
         Console.Write(msg);
         string messageIn = Console.ReadLine();
-        if (result = double.TryParse(messageIn, out double result_check));
-           {
+        if (result = double.TryParse(messageIn, out double result_check)) ;
+        {
             number = result_check;
             message = messageIn;
-           }
+        }
     }
     return number;
 }
@@ -27,10 +27,10 @@ double k1 = GetANumber("Введите переменную k1: ");
 double b2 = GetANumber("Введите переменную b2: ");
 double k2 = GetANumber("Введите переменную k2: ");
 
-double x = (b2-b1)/(k1-k2);
-double y = (k2*x)+b2;
+double x = (b2 - b1) / (k1 - k2);
+double y = (k2 * x) + b2;
 
 if (k1 == k2)
     Console.WriteLine("Прямые не пересекаются");
 else
-Console.WriteLine($"Точка пересечения: ({x:N3} , {y:N3} )");
+    Console.WriteLine($"Точка пересечения: ({x:N3} , {y:N3} )");
