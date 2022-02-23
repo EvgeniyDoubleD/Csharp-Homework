@@ -12,12 +12,12 @@ void GetPositiveNumsFromKeyboard(string msg) //
     {
         Console.Write(msg);
         string messageIn = Console.ReadLine();
-        if (result = double.TryParse(messageIn, out double result_check) && result_check > 0)
+        if (result = double.TryParse(messageIn, out double result_check) && result_check !> 0)
         {
             positiveCount++;
             result = false;
         }
-        else if (result = double.TryParse(messageIn, out double result_checkNeg) && result_checkNeg < 0)
+        else if (result = double.TryParse(messageIn, out double result_checkNeg) && result_checkNeg !< 0)
         {
             negativeCount++;
             result = false;
