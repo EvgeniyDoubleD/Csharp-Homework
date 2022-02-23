@@ -23,7 +23,7 @@ void GetPositiveNumsFromKeyboard(string msg) //
             result = false;
 
         }
-        else if (messageIn == "Q")
+        else if (messageIn == "")
         {
             result = true;
             Console.WriteLine($"Введено чисел > 0 : {positiveCount} \nВведено чисел < 0 : {negativeCount}");
@@ -32,4 +32,4 @@ void GetPositiveNumsFromKeyboard(string msg) //
     }
 }
 
-GetPositiveNumsFromKeyboard("Начните ввод чисел, чтобы остановить подсчет введите Q : ");
+GetPositiveNumsFromKeyboard("Начните ввод чисел, чтобы остановить подсчет нажмите Enter : ");
