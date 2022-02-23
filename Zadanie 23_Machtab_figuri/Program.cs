@@ -7,57 +7,28 @@
 
 // Пользователь вводит вершины фигуры в формате (х,у) (х1,у1) <..>
 // парсим строку, вычленяем x, y , умножаем
-bool StrArrayCheck(string[] array)
-{
-    
-    bool result = true;
-    int i = 0;
-    while (result == true)
-    {
-        for (i = 0; i < array.Length; i++)
-        {
-            if (result == true)
-            {
-                result = double.TryParse(array[i], out double ChekOut);
-            }
-            else
-            Console.WriteLine("В координатах содержатся недопустимые символы");
-        }
-    }
-    
-    return result;
-
-}
 
 Console.WriteLine("Введите вершины фигуры в формате (x,y) (x1,y1) <..>");
-string StrValue = Console.ReadLine();
-//Console.WriteLine(StrValue);
-if (StrValue.StartsWith("(") && StrValue.EndsWith(")"))
+string strValue = Console.ReadLine();
+if (strValue.StartsWith("(") && strValue.EndsWith(")"))
 {
-    StrValue = StrValue.Replace("(", "").Replace(")", "").Replace(",", " ");
-    string[] strArray = StrValue.Split(" ");
-    // int j = 0;
-    // while (j<strArray.Length)
-    // {
-    //     Console.Write(strArray[j]);
-    //     j++;
-    //     Console.WriteLine(strArray.Length);
-    // }
-    if (strArray.Length % 2 != 0 && StrArrayCheck(strArray) == false)
+    strValue = strValue.Replace("(", "").Replace(")", "").Replace(",", " ");
+    string[] strArr = strValue.Split(" ");
+    if (strArr.Length % 2 != 0)
     {
         Console.WriteLine("Координаты заданы некорректно, требуемый формат ввода (х,у) (х1,у1) <...>");
     }
-    else
+    else if (strArr.Length % 2 == 0)
     {
         Console.Write("Введие коэффициент масштабирования: ");
         string strMasht = Console.ReadLine();
         int i = 0;
         double k = double.Parse(strMasht);
         Console.WriteLine("Новые координаты: ");
-        while (i < strArray.Length)
+        while (i < strArr.Length)
         {
-            double x = k * (int.Parse(strArray[i]));
-            double y = k * (int.Parse(strArray[i + 1]));
+            double x = k * (int.Parse(strArr[i]));
+            double y = k * (int.Parse(strArr[i + 1]));
             Console.Write($"({x}, {y}) ");
             i = i + 2;
         }
@@ -67,10 +38,3 @@ else
 {
     Console.WriteLine("Координаты заданы не корректно, расчет не возможен.");
 }
-
-
-
-// for (int i = 0; i< strArray.Length; i = i++)
-// {
-//     Console.WriteLine(strArray[i]);
-// }
