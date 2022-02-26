@@ -10,7 +10,7 @@ void FillAndPrintMinusOddArray(int[,] array) // заполняем массив 
         for (int j = 0; j < array.GetLength(1); j++)
         {
             array[i, j] = rNum.Next(10, 111);
-            
+
             int k = array[i, j];
 
             if (k % 2 == 0)
