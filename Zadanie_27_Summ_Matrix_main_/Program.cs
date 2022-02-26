@@ -12,7 +12,7 @@ void MainMatrixSumm(int[,] array) //
 
             if (i == j) // || (i+j == 0)
             {
-                array[i,j] = 1;
+                array[i, j] = 1;
                 c += array[i, j];
             }
 
