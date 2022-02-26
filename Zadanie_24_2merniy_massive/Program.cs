@@ -2,7 +2,7 @@
 
 int [,] arr = new int[5,5];
 
-void FillAndPrintArray(int[,] array) // заполняем массив рандом 1.2 и сразу же его печатаем.
+void FillAndPrintArray(int[,] array) 
 {
     Random rNum = new Random();
     for (int i = 0; i < array.GetLength(0); i++)
