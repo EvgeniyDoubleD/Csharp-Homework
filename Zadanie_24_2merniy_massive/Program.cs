@@ -2,7 +2,7 @@
 
 int [,] arr = new int[5,5];
 
-void FillAndPrintArray(int[,] array) 
+void FillAndPrint2dArray(int[,] array) 
 {
     Random rNum = new Random();
     for (int i = 0; i < array.GetLength(0); i++)
@@ -16,4 +16,4 @@ void FillAndPrintArray(int[,] array)
     }
 }
 
-FillAndPrintArray(arr);
+FillAndPrint2dArray(arr);
