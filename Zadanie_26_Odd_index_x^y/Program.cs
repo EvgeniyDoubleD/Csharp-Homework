@@ -1,6 +1,6 @@
 ﻿// See Задача 52: В двумерном массиве заменить элементы, у которых оба индекса чётные на их квадраты.
 
-int[,] arr = new int[15, 15];
+int[,] arr = new int[6, 6];
 
 void FillAndPrintMinusOddArray(int[,] array) // заполняем массив рандом 1.2 и сразу же его печатаем.
 {
@@ -10,12 +10,9 @@ void FillAndPrintMinusOddArray(int[,] array) // заполняем массив 
         for (int j = 0; j < array.GetLength(1); j++)
         {
             array[i, j] = rNum.Next(04, 05);
-
-            int k = i ;
-            int b = j ;
             int c = array[i, j] * array[i, j];
 
-            if (k % 2 == 0 && b % 2 == 0) // || (i+j == 0)
+            if (i % 2 == 0 && j % 2 == 0) // || (i+j == 0)
             {
                 array[i, j] = c;
             }
