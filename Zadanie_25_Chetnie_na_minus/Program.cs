@@ -2,7 +2,7 @@
 
 int[,] arr = new int[5, 5];
 
-void FillAndPrintMinusOddArray(int[,] array) // заполняем массив рандом 1.2 и сразу же его печатаем.
+void FillAndPrintMinusEvenArray(int[,] array)
 {
     Random rNum = new Random();
     for (int i = 0; i < array.GetLength(0); i++)
@@ -24,5 +24,5 @@ void FillAndPrintMinusOddArray(int[,] array) // заполняем массив 
     }
 }
 
-FillAndPrintMinusOddArray(arr);
+FillAndPrintMinusEvenArray(arr);
 
