@@ -1,8 +1,8 @@
 ﻿// Задача 48: Показать двумерный массив размером m×n заполненный целыми числами.
 
-int [,] arr = new int[5,5];
+int[,] arr = new int[5, 5];
 
-void FillAndPrint2dArray(int[,] array) 
+void FillAndPrint2dArray(int[,] array)
 {
     Random rNum = new Random();
     for (int i = 0; i < array.GetLength(0); i++)
