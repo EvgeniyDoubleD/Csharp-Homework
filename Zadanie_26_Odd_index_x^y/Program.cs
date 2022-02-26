@@ -2,7 +2,7 @@
 
 int[,] arr = new int[6, 6];
 
-void FillAndPrintMinusOddArray(int[,] array) // заполняем массив рандом 1.2 и сразу же его печатаем.
+void FillAndPrintMinusOddArray(int[,] array) // заполняем и сразу возводим в квадрат. 
 {
     Random rNum = new Random();
     for (int i = 0; i < array.GetLength(0); i++)
