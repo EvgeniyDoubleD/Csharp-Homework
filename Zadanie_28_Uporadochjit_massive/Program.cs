@@ -1,6 +1,6 @@
 ﻿// See Задача 57: Написать программу, которая упорядочивает по убыванию элементы каждой строки двумерной массива.
 
-int[,] arr = new int[5, 5];
+int[,] arr = new int[8, 15];
 
 void MainMatrixSumm(int[,] array) // 
 {
@@ -23,7 +23,7 @@ void SortArray(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
-        for (int j = 0; j < array.GetLength(1) - 1; j++)
+        for (int j = 0; j < array.GetLength(1)-1; j++)
         {
             int maxNumb = array[i, j];
             if (maxNumb < array[i, j + 1])
@@ -41,7 +41,7 @@ void SortArray(int[,] array)
 
 void PrintArray(int[,] array)
 {
-    for (int i = 0; i < array.GetLength(0); i++)
+    for (int i = 0; i < array.GetLength(1); i++)
         SortArray(arr);
     for (int i = 0; i < array.GetLength(0); i++)
     {
