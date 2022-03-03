@@ -43,18 +43,18 @@ int FindMinString(int[,] array)
             summOfLocalstring += array[i, j];
             if (i == 0)
             {
-            summOfstriing = summOfLocalstring;
+                summOfstriing = summOfLocalstring;
             }
         }
 
         if (summOfLocalstring < summOfstriing)
         {
             summOfstriing = summOfLocalstring;
-            minString = i+1;
+            minString = i + 1;
         }
 
         ///Console.WriteLine($"i = {i} minstring = {minString} summOfLocalstring {summOfLocalstring} summofstriing {summOfstriing}");
-        Console.WriteLine($"Строка {i+1}, сумма элементов строки - {summOfLocalstring}");
+        Console.WriteLine($"Строка {i + 1}, сумма элементов строки - {summOfLocalstring}");
     }
 
     return minString;
