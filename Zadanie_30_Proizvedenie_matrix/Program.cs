@@ -24,7 +24,7 @@ void FillAndPrintRArray(int[,] array) //
     }
 }
 
-void MultiMaxtix(int[,] array1, int[,] array2)
+void MultiMatrix(int[,] array1, int[,] array2)
 {
     for (int i = 0; i < array1.GetLength(0); i++)
     {
@@ -47,9 +47,29 @@ void MultiMaxtix(int[,] array1, int[,] array2)
     }
 }
 
+bool CheckArray(int[,] array1, int[,] array2)
+{
+    int stroka = array1.GetLength(0);
+    int stolb = array2.GetLength(1);
+    bool b = false;
+    if (stroka == stolb)
+        b = true;
+    return b;
+}
+
+bool check = true;
+Console.WriteLine("Matrix one:");
 FillAndPrintRArray(matrixOne);
-Console.WriteLine("=======");
+Console.WriteLine("=================");
+Console.WriteLine("Matrix two:");
 FillAndPrintRArray(matrixTwo);
-Console.WriteLine("=======");
-Console.WriteLine("resultmatrix:");
-MultiMaxtix(matrixOne, matrixTwo);
+Console.WriteLine("=================");
+
+if (check == CheckArray(matrixOne, matrixTwo))
+{
+    Console.WriteLine("Result of multiplie:");
+    MultiMatrix(matrixOne, matrixTwo);
+    Console.WriteLine("=================");
+}
+else
+    Console.WriteLine("Matrix sies is not able to be multiplie!");
