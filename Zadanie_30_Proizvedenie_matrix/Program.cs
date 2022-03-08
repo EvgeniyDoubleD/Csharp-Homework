@@ -17,49 +17,35 @@ void FillAndPrintRArray(int[,] array) //
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            array[i, j] = randomNum.Next(2, 4);
+            array[i, j] = randomNum.Next(2, 6);
             Console.Write($"[{array[i, j]}]\t");
         }
         Console.WriteLine();
     }
 }
 
-int [,] MultiMaxtix(int[,] array1, int[,] array2)
+void MultiMaxtix(int[,] array1, int[,] array2)
 {
-    int [,] array3 = new int [array1.GetLength(0), array2.GetLength(1)];
     for (int i = 0; i < array1.GetLength(0); i++)
     {
         for (int j = 0; j < array2.GetLength(1); j++)
         {
-            array3 [i,j] = 0;
+            int result2 = 0;
             for (int k = 0; k < array2.GetLength(1); k++)
             {
-                array3[i,j] += array1[i, k] * array2[k, j];
-                // int result = 0;
-                // result = array1[i, k] * array2[k, j];
-                // Console.WriteLine();
-                // Console.WriteLine($"result2 = {result} x1 = {i},{k} * x2 = {k},{j}");
-                // result2 += result;
-                // Console.WriteLine($"result2 = {result2}");
+                int result = 0;
+                result = array1[i, k] * array2[k, j];
+                //Console.WriteLine();
+                //Console.WriteLine($"result2 = {result} x1 = {i},{k} * x2 = {k},{j}");
+                result2 += result;
+                //Console.WriteLine($"result2 = {result2}");
                 // for (int t = 0; t < array1.GetLength(1); t++)
                 // {
 
                 // }
             }
-            // Console.WriteLine();
-            // Console.Write($"[{result2}]\t");
-        }
-        // Console.WriteLine();
-    }
-    return array3;
-}
-void PrintRArray(int[,] array) // 
-{
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            Console.Write($"[{array[i, j]}]\t");
+            //Console.WriteLine();
+            Console.Write($"[{result2}]\t");
         }
         Console.WriteLine();
     }
@@ -70,5 +56,4 @@ Console.WriteLine("=======");
 FillAndPrintRArray(matrixTwo);
 Console.WriteLine("=======");
 Console.WriteLine("resultmatrix:");
-var matrix = MultiMaxtix(matrixOne, matrixTwo);
-PrintRArray(matrix);
+MultiMaxtix(matrixOne, matrixTwo);
