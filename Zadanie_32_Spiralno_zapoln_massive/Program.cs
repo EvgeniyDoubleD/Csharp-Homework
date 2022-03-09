@@ -1,7 +1,7 @@
 ﻿// Задача 65: Спирально заполнить двумерный массив
 
 
-int[,] matrixTwo = new int[5, 5];
+int[,] spiralityArray = new int[5, 5];
 
 void FillArray(int[,] array) // 
 {
@@ -57,5 +57,5 @@ void PrintRArray(int[,] array) //
     }
 }
 
-FillArray(matrixTwo);
-PrintRArray(matrixTwo);
+FillArray(spiralityArray);
+PrintRArray(spiralityArray);
