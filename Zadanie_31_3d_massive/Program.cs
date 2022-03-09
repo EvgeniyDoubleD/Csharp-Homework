@@ -14,12 +14,14 @@ void FillAndPrintRArray(int[,,] array) //
             for (int k = 0; k < array.GetLength(2); k++)
             {
                 array[i, j, k] = mNum;
-                Console.Write($"Index: [{i},{j},{k}] Value: [{array[i, j, k]}]\t\n");
+                Console.Write($"[{i},{j},{k}] {array[i, j, k]}\t");
                 mNum++;
             }
+            Console.WriteLine();
         }
-        Console.WriteLine();
+        Console.WriteLine("==========================================");
     }
 }
 
+Console.WriteLine("3d massive printout: ");
 FillAndPrintRArray(threedmassive);
