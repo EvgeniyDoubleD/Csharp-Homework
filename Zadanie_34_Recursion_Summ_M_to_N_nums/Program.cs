@@ -28,11 +28,11 @@ void FirstRecursionTry(int numA, int numB, int summ)
         FirstRecursionTry(numA, numB, summ);
     }
     else
-    {   
+    {
         summ++;
-        Console.Write($"Summ of natural elems = {summ}");
+        Console.Write($"Summ of natural elements in range = {summ}");
     }
-        
+
 }
 
 int m = GetAnaturalNumber("Введите натуральное число M: ");
