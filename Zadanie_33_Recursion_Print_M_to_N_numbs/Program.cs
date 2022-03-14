@@ -40,4 +40,4 @@ if (m < n)
     FirstRecursionTry(m, n);
 }
 else
-    FirstRecursionTry(n,m);
+    FirstRecursionTry(n, m);
