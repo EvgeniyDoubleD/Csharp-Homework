@@ -19,13 +19,13 @@ int GetAnaturalNumber(string msg) // метод ввода числа с про�
     return number;
 }
 
-void FirstRecursionTry(int numA, int numB, int summ)
+void SecondRecursionTry(int numA, int numB, int summ)
 {
     if (numA != numB)
     {
         summ++;
         numA++;
-        FirstRecursionTry(numA, numB, summ);
+        SecondRecursionTry(numA, numB, summ);
     }
     else
     {
@@ -40,7 +40,7 @@ int n = GetAnaturalNumber("Введите натуральное число N: "
 
 if (m < n)
 {
-    FirstRecursionTry(m, n, 0);
+    SecondRecursionTry(m, n, 0);
 }
 else
-    FirstRecursionTry(n, m, 0);
+    SecondRecursionTry(n, m, 0);
